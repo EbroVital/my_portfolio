@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Ebrottié Vital - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">
+            <img src="image/logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#timeline">Parcours</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="greeting">👋 Bonjour, je suis</p>
+            <h1>Nango <span>Ebrottié<br>Vital E.</span></h1>
+            <div class="typed-text" id="typed-text"></div>
+            <p class="description">
+                Développeur passionné basé à Abidjan, spécialisé en PHP/Laravel et Python. 
+                Je transforme des idées en applications web performantes, élégantes et sur mesure.
+            </p>
+            <div>
+                <a href="#contacts" class="btn">Démarrer un projet</a>
+                <a href="#projects" class="btn btn-outline">Voir mes réalisations</a>
+            </div>
+        </div>
+        
+    <!--<div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Projets Réalisés</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Technologies</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3+</div>
+                <div class="stat-label">Années d'Expérience</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Clients Satisfaits</div>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div style="text-align: center;">
+            <h2 class="section-title">Compétences Techniques</h2>
+        </div>
+        
+        <div class="skills-grid">
+            <div class="skill-category">
+                <i class="fas fa-server"></i>
+                <h3>Backend Development</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">Laravel</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">REST APIs</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Frontend Development</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">Tailwind CSS</span>
+                    <span class="skill-tag">Responsive Design</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <i class="fas fa-database"></i>
+                <h3>Base de Données</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <!-- <span class="skill-tag">SQLite</span> -->
+                    <span class="skill-tag">Database Design</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <i class="fas fa-tools"></i>
+                <h3>Outils & Autres</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Insomnia</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Linux</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div style="text-align: center;">
+            <h2 class="section-title">Projets Réalisés</h2>
+        </div>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h3>Plateforme E-commerce</h3>
+                <p>
+                    Développement d'une plateforme de vente en ligne complète avec gestion des produits, 
+                    panier d'achat et tableau de bord administrateur.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-badge">Laravel</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">Bootstrap</span>
+                    <a href="https://github.com/EbroVital/Shop" target="_blank" class="btn btn-link">Voir sur github</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Système de Gestion Scolaire</h3>
+                <p>
+                    Application web pour la gestion des étudiants, professeurs, cours, notes . 
+                    Interface intuitive avec tableaux de bord personnalisés par rôle.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge"> Bootstrap</span>
+                    <span class="tech-badge">MySQL</span>
+                    <a href="https://github.com/EbroVital/GestionClasse" target="_blank" class="btn btn-link">Voir sur github</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>API REST Multi-usage</h3>
+                <p>
+                    Conception et développement d'APIs RESTful pour applications mobiles et web permettant à des utilisateurs de créer des posts .
+                    Documentation complète & authentification.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-badge">Laravel</span>
+                    <span class="tech-badge">Sanctum</span>
+                    <span class="tech-badge">JSON</span>
+                    <a href="https://github.com/EbroVital/blogUserApi" target="_blank" class="btn btn-link">Voir sur github</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3>Site Vitrine Entreprise</h3>
+                <p>
+                    Création de sites web professionnels pour entreprises avec design moderne, 
+                    optimisation SEO, formulaires de contact et sections dynamiques.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">Tailwind</span>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <h3>Système de Gestion de Tâches</h3>
+                <p>
+                    Application de gestion de projets avec attribution de tâches, suivi du temps, 
+                    notifications en temps réel et rapports de productivité.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-badge">Laravel</span>
+                    <span class="tech-badge">Vue.js</span>
+                    <span class="tech-badge">WebSocket</span>
+                    <span class="tech-badge">MySQL</span>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Scripts d'Automatisation</h3>
+                <p>
+                    Développement de scripts Python pour automatiser des tâches répétitives, 
+                    traitement de données et intégrations avec APIs tierces.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Pandas</span>
+                    <span class="tech-badge">Selenium</span>
+                    <span class="tech-badge">API REST</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline">
+        <div style="text-align: center;">
+            <h2 class="section-title">Mon Parcours</h2>
+        </div>
+        
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2025</div>
+                    <h3>Licence en Génie Logiciel</h3>
+                    <p>Obtention de ma licence avec mention, spécialisation en développement web et ingénierie logicielle.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2024</div>
+                    <h3>1er Stage de validation du BTS</h3>
+                    <p>Réalisation de projets pendant mon stage.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2023</div>
+                    <h3>BTS en Informatique Développeur d'Application</h3>
+                    <p>Formation intensive en développement web, acquisition des bases solides en programmation et gestion de base de données.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2022</div>
+                    <h3>Premiers Projets Web</h3>
+                    <p>Début de mon apprentissage .</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacts">
+        <div style="text-align: center;">
+            <h2 class="section-title">Travaillons Ensemble</h2>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contactez-moi</h3>
+                <p style="margin-bottom: 30px; color: var(--text-light);">
+                    Vous avez un projet en tête ? N'hésitez pas à me contacter, je serais ravi d'en discuter avec vous.
+                </p>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong style="display: block; margin-bottom: 5px;">Email</strong>
+                        <span>ebrovital02@gmail.com</span>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong style="display: block; margin-bottom: 5px;">Téléphone</strong>
+                        <span>+225 07 59 32 37 87</span>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong style="display: block; margin-bottom: 5px;">Localisation</strong>
+                        <span>Abidjan, Côte d'Ivoire</span>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://x.com/Vitvl_08" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/its_Vitvl/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/emmanueli-vital-56a2b2389/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/EbroVital" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+                
+                <a href="Docs/EbroVital_CV.pdf" download class="btn" style="margin-top: 30px; display: inline-block;">
+                    <i class="fas fa-download"></i> Télécharger mon CV
+                </a>
+            </div>
+            
+            <!-- <div class="contact-form">
+                <div id="form-status" class="form-status"></div>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Votre nom *" required>
+                    <input type="email" name="email" placeholder="Votre email *" required>
+                    <input type="text" name="subject" placeholder="Sujet">
+                    <textarea name="message" placeholder="Votre message *" required></textarea>
+                    <button type="submit" class="btn">
+                        <i class="fas fa-paper-plane"></i> Envoyer le message
+                    </button>
+                </form>
+            </div> -->
+        </div>
+    </section>
+
+
+    <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+        <!-- Background -->
+        <!-- <rect width="800" height="400" fill="#0a0e27"/> -->
+  
+        <!-- Version 1: <EV /> - Top Left -->
+        <!-- <g transform="translate(100, 80)">
+            <text x="0" y="0" font-family="'Fira Code', monospace" font-size="48" font-weight="bold" fill="#E6182A">&lt;</text>
+            <text x="30" y="0" font-family="'Fira Code', monospace" font-size="48" font-weight="bold" fill="#ffffff">EV</text>
+            <text x="120" y="0" font-family="'Fira Code', monospace" font-size="48" font-weight="bold" fill="#E6182A">/&gt;</text>
+            <text x="0" y="35" font-family="'Poppins', sans-serif" font-size="14" fill="#e0e0e0">Full-Stack Developer</text>
+        </g> -->
+  
+        <!-- Version 2: {E} - Top Right -->
+        <!-- <g transform="translate(480, 80)">
+            <text x="0" y="0" font-family="'Fira Code', monospace" font-size="56" font-weight="bold" fill="#00d4ff">{</text>
+            <text x="35" y="0" font-family="'Fira Code', monospace" font-size="56" font-weight="bold" fill="#ffffff">E</text>
+            <text x="85" y="0" font-family="'Fira Code', monospace" font-size="56" font-weight="bold" fill="#00d4ff">}</text>
+            <text x="0" y="35" font-family="'Poppins', sans-serif" font-size="14" fill="#e0e0e0">Ebrottié</text>
+        </g> -->
+  
+        <!-- Version 3: Terminal style - Bottom Left -->
+        <!-- <g transform="translate(60, 240)">
+            <rect x="0" y="-45" width="320" height="80" rx="8" fill="#1a1f3a" stroke="#E6182A" stroke-width="2"/>
+            <text x="15" y="-10" font-family="'Fira Code', monospace" font-size="20" fill="#00d4ff">ebro@dev</text>
+            <text x="140" y="-10" font-family="'Fira Code', monospace" font-size="20" fill="#ffffff">:</text>
+            <text x="155" y="-10" font-family="'Fira Code', monospace" font-size="20" fill="#9b59b6">~</text>
+            <text x="175" y="-10" font-family="'Fira Code', monospace" font-size="20" fill="#ffffff">$</text>
+            <rect x="195" y="-23" width="12" height="20" fill="#E6182A" opacity="0.8">
+            <animate attributeName="opacity" values="0.8;0;0.8" dur="1s" repeatCount="indefinite"/>
+            </rect>
+        </g> -->
+  
+        <!-- Version 4: Minimal <EV/> - Bottom Right -->
+        <!-- <g transform="translate(480, 260)">
+            <circle cx="95" cy="-15" r="60" fill="#1a1f3a" stroke="#E6182A" stroke-width="3"/>
+            <text x="45" y="0" font-family="'Fira Code', monospace" font-size="32" font-weight="bold" fill="#ffffff">&lt;EV/&gt;</text>
+        </g> -->
+    </svg>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Nango Ebrottié Vital E. • Développé avec <span style="color: var(--primary-color);">❤</span> à Abidjan</p>
+        <p style="margin-top: 10px; font-size: 14px; opacity: 0.7;">Tous droits réservés</p>
+    </footer>
+
+    
+
+</body>
+</html>
