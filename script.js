@@ -1,5 +1,4 @@
-
-        // Typed text animation
+// Typed text animation
         const phrases = [
             'Développeur',
             'Spécialiste Laravel & Django',
