@@ -533,6 +533,22 @@
             font-size: 12px;
             border: 1px solid rgba(0, 212, 255, 0.2);
         }
+        .status-T{
+            background: rgb(2, 253, 124);
+            color: black;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            border: 1px solid black;
+        }
+        .status{
+            background: rgb(255, 129, 2);
+            color: black;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            border: 1px solid black;
+        }
         
         /* Contact Section */
         #contacts {
