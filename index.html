@@ -3,478 +3,1107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ebrottié's Vital Junior Developper portfolio">
-    <meta content="ebrovitalportfolio.netlify.app" property="og:title"> 
+
+    <meta name="description" content="Portfolio de Nango Ebrottié Vital Emmanueli, développeur logiciel. Conception d'applications web, API REST et bases de données.">
+    <meta name="author" content="Nango Ebrottié Vital Emmanueli">
+
+    <meta property="og:title" content="Ebro Vital — Ingénierie logicielle">
+    <meta property="og:description" content="Concevoir des applications utiles. Structurer des systèmes fiables.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ebrovitalportfolio.netlify.app/">
     <meta property="og:image" content="image/logo.png">
-    <meta property="og:url" content="https://ebrovitalportfolio.netlify.app">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <title>Ebrottié Vital - Portfolio</title>
-    <link rel="website icon" href="image/logo.png" type="png">
+
+    <link rel="icon" href="image/logo.png" type="image/png">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+
+    <title>Ebrottié Vital — Portfolio</title>
+
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="logo">
-            <img src="image/logo.png" alt="">
-        </div>
-        <ul>
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#skills">Compétences</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#timeline">Parcours</a></li>
-            <li><a href="#contacts">Contact</a></li>
-        </ul>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <p class="greeting">Bonjour, je suis</p>
-            <h1>Nango <span>Ebrottié<br>Vital Emmanueli</span></h1>
-            <div class="typed-text" id="typed-text">
-                Développeur web junior | PHP · Laravel · MySQL
-                Développement d'applications web, conception de bases de données, API REST et déploiement.
+    <!-- Barre de navigation -->
+    <header class="site-header" id="top">
+        <nav class="navigation" aria-label="Navigation principale">
+
+            <div class="logo">
+                <img src="image/logo.png" alt="">
+            </div>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false"
+                aria-controls="nav-links">
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Accueil</a></li>
+                <!-- <li><a href="#approach" class="nav-link">Approche</a></li> -->
+                <li><a href="#skills" class="nav-link">Expertise</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#journey" class="nav-link">Parcours</a></li>
+                <li><a href="#contact" class="nav-contact">Me contacter <span>↗</span></a></li>
+            </ul>
+
+        </nav>
+    </header>
 
 
-            </div>
-            <p class="description"></p>
-            <div>
-                <a href="#contacts" class="btn">Démarrer un projet</a>
-                <a href="#projects" class="btn btn-outline">Voir mes réalisations</a>
-            </div>
-        </div>
-        
-        <!-- <div class="stats">
-            <div class="stat-card">
-                <div class="stat-number">5+</div>
-                <div class="stat-label">Projets Réalisés</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">3+</div>
-                <div class="stat-label">Technologies</div>
-            </div>
-        </div> -->
-    </section>
+    <main>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div style="text-align: center;">
-            <h2 class="section-title">Compétences Techniques</h2>
-        </div>
-        
-        <div class="skills-grid">
-            <div class="skill-category">
-                <i class="fas fa-server"></i>
-                <h3>Backend Development</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">
-                        <img src="https://skillicons.dev/icons?i=php" />
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://skillicons.dev/icons?i=laravel" />
-                    </span>
-                    <!-- <span class="skill-tag">
-                        <img src="https://skillicons.dev/icons?i=python" />
-                    </span> -->
-                    <!-- <span class="skill-tag">
-                        <img src="https://skillicons.dev/icons?i=django" />
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://skillicons.dev/icons?i=flask" />
-                    </span> -->
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <i class="fas fa-paint-brush"></i>
-                <h3>Frontend Development</h3>
-                <div class="skill-tags">
-                    
-                    <span class="skill-tag">
-                        <img src="https://skillicons.dev/icons?i=javascript" />
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://skillicons.dev/icons?i=html" />
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://skillicons.dev/icons?i=bootstrap" />
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://skillicons.dev/icons?i=css" />
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://skillicons.dev/icons?i=tailwind" />
-                    </span>
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <i class="fas fa-database"></i>
-                <h3>Base de Données</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">
-                        <img src="https://skillicons.dev/icons?i=mysql" />
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://skillicons.dev/icons?i=postgresql" />
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://skillicons.dev/icons?i=sqlite" />
-                    </span>
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <i class="fas fa-tools"></i>
-                <h3>Outils & Autres</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">
-                        <img src="https://skillicons.dev/icons?i=git" />
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://skillicons.dev/icons?i=github" />
-                    </span>
-                    <span class="skill-tag">
-                        <img src="https://skillicons.dev/icons?i=vscode" />
-                    </span>
-                    <!-- <span class="skill-tag">
-                        <img src="https://skillicons.dev/icons?i=postman" />
-                    </span> -->
-                    <!-- <span class="skill-tag">Docker</span> -->
-                    <!-- <span class="skill-tag">
-                        <img src="https://skillicons.dev/icons?i=linux" />
-                    </span> -->
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- 01 — Hero -->
+        <section class="hero section-shell" id="home">
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div style="text-align: center;">
-            <h2 class="section-title">Projets Réalisés</h2>
-        </div>
-        
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-                <h3>Plateforme E-commerce</h3>
-                <p>
-                    Développement d'une plateforme de vente en ligne complète avec gestion des produits, 
-                    panier d'achat et tableau de bord administrateur.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-badge">Laravel</span>
-                    <span class="tech-badge">MySQL</span>
-                    <span class="tech-badge">Bootstrap</span>
-                    <span class="status-T">Terminé | deploiement en cours</span>
-                    <a href="https://github.com/EbroVital/Shop" target="_blank" class="btn btn-link">Voir sur github</a>
-                </div>
+            <div class="hero-topline">
+                <span class="eyebrow">PORTFOLIO PERSONNEL</span>
+                <span class="location-label">
+                    <span class="status-dot"></span>
+                    ABIDJAN, CÔTE D'IVOIRE
+                </span>
             </div>
-            
-            <div class="project-card">
-                <div class="project-icon">
-                    <i class="fas fa-graduation-cap"></i>
+
+            <div class="hero-grid">
+
+                <div class="hero-copy">
+                    <p class="section-index">01 — PROFIL</p>
+
+                    <p class="hero-intro">Bonjour, je suis</p>
+
+                    <h1>
+                        Nango Ebrottié <br>
+                        Vital Emmanueli <br>
+                        <!-- <span class="serif-accent">qui ont du sens.</span> -->
+                    </h1>
+
+                    <p class="hero-description">
+                        Développeur web junior spécialisé en  PHP · Laravel · MySQL
+                        <br>Basé à Abidjan, Côte d'Ivoire, avec une formation en génie logiciel et une passion pour la conception et le développement d'applications web utiles et fonctionnelles.
+
+                        Je transforme des idées en solutions numériques concrètes, conçoit des bases de données, développe des fonctionnalités backend et crée des interfaces utilisateur intuitives.
+                        
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="button-primary">
+                            Explorer mes projets <span>↗</span>
+                        </a>
+
+                        <a href="Docs/EbroCV.pdf" class="text-link" download>
+                            Télécharger mon CV <span>↓</span>
+                        </a>
+                    </div>
+
+                    <!-- <div class="hero-footnote">
+                        <span>PHP / LARAVEL / JAVASCRIPT</span>
+                        <span>CONCEPTION · DÉVELOPPEMENT · ITÉRATION</span>
+                    </div> -->
                 </div>
-                <h3>Système de Gestion d'une classe</h3>
-                <p>
-                    Un système complet de gestion d'une classe développé en PHP natif, permettant aux professeurs de gérer les notes, générer des bulletins et suivre les performances des élèves.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-badge">PHP</span>
-                    <span class="tech-badge"> Bootstrap</span>
-                    <span class="tech-badge">MySQL</span>
-                    <span class="status-T">Terminé | deploiement en cours</span>
-                    <a href="https://github.com/EbroVital/GestionClasse" target="_blank" class="btn btn-link">Voir sur github</a>
+
+
+                <!-- Schéma architectural décoratif -->
+                 <div class="architecture-panel" aria-label="Schéma conceptuel des couches d'une application">
+
+                    <div class="diagram-header">
+                        <span>FIG. 001</span>
+                        <span>APPLICATION SYSTEM MAP</span>
+                    </div>
+
+                    <div class="diagram-canvas">
+
+                        <div class="diagram-coordinate coordinate-top">A—01</div>
+                        <div class="diagram-coordinate coordinate-bottom">B—04</div>
+
+                        <svg class="diagram-lines"
+                             viewBox="0 0 440 450"
+                             role="img"
+                             aria-label="Connexions entre interface, logique métier et base de données">
+
+                            <path d="M220 95 V145" />
+                            <path d="M220 195 V245" />
+                            <path d="M220 295 V345" />
+
+                            <path d="M90 170 H135" />
+                            <path d="M305 170 H350" />
+
+                            <path d="M90 270 H135" />
+                            <path d="M305 270 H350" />
+
+                            <circle cx="220" cy="120" r="4" />
+                            <circle cx="220" cy="220" r="4" />
+                            <circle cx="220" cy="320" r="4" />
+
+                            <path class="diagram-guide" d="M35 30 H405" />
+                            <path class="diagram-guide" d="M35 400 H405" />
+                            <path class="diagram-guide" d="M35 30 V400" />
+                            <path class="diagram-guide" d="M405 30 V400" />
+                        </svg>
+
+                        <div class="architecture-node node-interface">
+                            <span class="node-number">LAYER 01</span>
+                            <strong>Interface</strong>
+                            <small>Interaction utilisateur</small>
+                        </div>
+
+                        <div class="architecture-node node-logic">
+                            <span class="node-number">LAYER 02</span>
+                            <strong>Logique métier</strong>
+                            <small>Règles & traitements</small>
+                        </div>
+
+                        <div class="architecture-node node-data">
+                            <span class="node-number">LAYER 03</span>
+                            <strong>Données</strong>
+                            <small>Modèles & relations</small>
+                        </div>
+
+                        <div class="diagram-side-note">
+                            STRUCTURE<br>AVANT STYLE
+                        </div>
+
+                    </div>
+
+                    <div class="diagram-footer">
+                        <span>FIGURE A / ARCHITECTURE LOGICIELLE</span>
+                        <span>CONCEPT — 001</span>
+                    </div>
+
                 </div>
+
             </div>
-            
-            <div class="project-card">
-                <div class="project-icon">
-                    <i class="fas fa-code"></i>
-                </div>
-                <h3>API REST Multi-usage</h3>
-                <p>
-                    Une API de blog, permettant la gestion des utilisateurs, des articles et des interactions (authentification, publications, etc.).
-                </p>
-                <div class="project-tech">
-                    <span class="tech-badge">Laravel</span>
-                    <span class="tech-badge">Sanctum</span>
-                    <span class="tech-badge">JSON</span>
-                    <span class="status-T">Terminé</span>
-                    <a href="https://github.com/EbroVital/blogUserApi" target="_blank" class="btn btn-link">Voir sur github</a>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <div class="project-icon">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <h3>Site Vitrine Entreprise</h3>
-                <p>
-                    Création de sites web professionnels pour entreprises avec design moderne, 
-                    optimisation SEO, formulaires de contact et sections dynamiques.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-badge">HTML5</span>
-                    <span class="tech-badge">CSS3</span>
-                    <span class="status-T">Terminé</span>
-                    <a href="https://github.com/EbroVital/Site_vitrine-agence-de-voyage-" target="_blank" class="btn btn-link">Voir sur github</a>
-                    <a href="https://travelsiteagency.netlify.app/" target="_blank" class="btn btn-link">Voir le site</a>
-                </div>
-            </div>
-            
-            <!-- <div class="project-card">
-                <div class="project-icon">
-                    <i class="fas fa-tasks"></i>
-                </div>
-                <h3>Système de Gestion de Tâches</h3>
-                <p>
-                    Application de gestion de projets avec attribution de tâches, suivi du temps, 
-                    notifications en temps réel et rapports de productivité.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-badge">Laravel</span>
-                    <span class="tech-badge">Vue.js</span>
-                    <span class="tech-badge">WebSocket</span>
-                    <span class="tech-badge">MySQL</span>
-                </div>
+
+            <!-- <div class="hero-bottomline">
+                <span>INGÉNIERIE LOGICIELLE & APPLICATIONS WEB</span>
+                <a href="#approach" aria-label="Découvrir mon approche">
+                    DÉFILER POUR EXPLORER <span>↓</span>
+                </a>
             </div> -->
-            <div class="project-card">
-                <div class="project-icon">
-                    <i class="fa-solid fa-arrow-trend-up"></i>
-                </div>
-                <h3>Système de gestion de stock</h3>
-                <p>
-                    Une application complète de gestion de stock permettant de gérer efficacement les produits, les mouvements (entrées/sorties), et d'assurer un suivi clair des opérations réalisées par les utilisateurs.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-badge">PHP</span>
-                    <span class="tech-badge">Bootstrap</span>
-                    <span class="tech-badge">MySQL</span>
-                    <span class="status-T">Terminé | deploiement en cours</span>
-                    <a href="https://github.com/EbroVital/GestionStock" target="_blank" class="btn btn-link">Voir sur github</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-icon">
-                    <i class="fas fa-tasks"></i>
-                </div>
-                <h3>Bibliothèque numérique scolaire</h3>
-                <p>
-                    Une application web de gestion d'une bibliothèque en ligne, développée dans le cadre de mon mémoire de fin de cycle en Licence 3 Génie Logiciel.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-badge">Laravel</span>
-                    <span class="tech-badge">Bootstrap</span>
-                    <span class="tech-badge">MySQL</span>
-                    <span class="status-T">Terminé | deploiement en cours</span>
-                    <a href="https://github.com/EbroVital/GestionBlibliotheque" target="_blank" class="btn btn-link">Voir sur github</a>
-                </div>
+
+        </section>
+
+
+        <!-- 02 — Approche -->
+        <!-- <section class="approach-section section-shell" id="approach">
+
+            <div class="section-heading">
+                <p class="section-index">02 — PHILOSOPHIE</p>
+                <span class="section-reference">MÉTHODE / 001</span>
             </div>
 
-            <div class="project-card">
-                <div class="project-icon">
-                    <i class="fas fa-robot"></i>
-                </div>
-                <h3>Kumajala</h3>
-                <p>
-                    Une application web  qui permet de traduire du français vers des langues locales africaines et de restituer la traduction sous forme de texte et de voix.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-badge">Python/Flask</span>
-                    <span class="tech-badge">Vue js</span>
-                    <span class="tech-badge">HTML & CSS</span>
-                    <span class="tech-badge">Firebase</span>
-                    <span class="status-T">Terminé</span>
-                    <a href="https://github.com/EbroVital/kumajala" target="_blank" class="btn btn-link">Voir sur github</a>
-                    <a href="https://kumajala-ten.vercel.app/" target="_blank" class="btn btn-link">Voir l'application</a>
-                </div>
-            </div>
+            <div class="approach-grid">
 
-            <div class="project-card">
-                <div class="project-icon">
-                    <i class="fa-solid fa-file"></i>
+                <div class="approach-title">
+                    <h2>
+                        Le code est<br>
+                        un moyen.<br>
+                        <span class="serif-accent">La solution est le but.</span>
+                    </h2>
                 </div>
-                <h3>Application de gestion des avis et des délibérations</h3>
-                <p>
-                    Application web développée au cours de mon stage pour la validation du BTS en Informatique Développeur d'Application.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-badge">PHP/Laravel</span>
-                    <span class="tech-badge">Bootstrap</span>
-                    <span class="tech-badge">MySQL</span>
-                    <span class="tech-badge">DOMPDF</span>
-                    <span class="status-T">Terminé</span>
-                    <a href="https://github.com/EbroVital/stage_app" target="_blank" class="btn btn-link">Voir sur github</a>
-                    <a href="https://stageapp-production.up.railway.app/" target="_blank" class="btn btn-link">Voir l'application</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Timeline Section -->
-    <section id="timeline">
-        <div style="text-align: center;">
-            <h2 class="section-title">Mon Parcours</h2>
-        </div>
-        
-        <div class="timeline-container">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">Gecos Formation | 2024-2025</div>
-                    <h3>Licence en Génie Logiciel</h3>
-                    <p>Obtention de ma licence avec mention</p>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">Conseil Régional de l'Indenié-Djuablin | Décembre 2023-Avril 2024</div>
-                    <h3>1er Stage de validation du BTS</h3>
-                    <p>Réalisation de projets pendant mon stage.</p>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">Ecole Supérieure de l'Enseignement Technique Et Commerciale (ESETEC) | 2023</div>
-                    <h3>BTS en Informatique Développeur d'Application</h3>
-                    <p>Formation intensive en développement web, acquisition des bases solides en programmation et gestion de base de données.</p>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">Ecole Supérieure de l'Enseignement Technique Et Commerciale (ESETEC) | 2022</div>
-                    <h3>Premiers Projets Web</h3>
-                    <p>Début de mon apprentissage .</p>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-        </div>
-    </section>
+                <div class="approach-content">
+                    <p class="large-copy">
+                        Une application utile commence bien avant la première
+                        ligne de code : elle commence par la compréhension
+                        d'un problème.
+                    </p>
 
-    <!-- Contact Section -->
-    <section id="contacts">
-        <div style="text-align: center;">
-            <h2 class="section-title">Travaillons Ensemble</h2>
-        </div>
-        
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>Contactez-moi</h3>
-                <p style="margin-bottom: 30px; color: var(--text-light);">
-                    Vous avez un projet en tête ? N'hésitez pas à me contacter, je serais ravi d'en discuter avec vous.
-                </p>
-                
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <strong style="display: block; margin-bottom: 5px;">Email</strong>
-                        <span>ebrovital02@gmail.com</span>
+                    <p class="body-copy">
+                        J'aime transformer des besoins concrets en applications
+                        structurées, en réfléchissant aux fonctionnalités,
+                        aux données et aux interactions entre les différentes
+                        parties du système.
+                    </p>
+
+                    <div class="principles-list">
+
+                        <article class="principle">
+                            <span class="principle-number">01</span>
+                            <div>
+                                <h3>Comprendre</h3>
+                                <p>Identifier le besoin avant de choisir la solution technique.</p>
+                            </div>
+                        </article>
+
+                        <article class="principle">
+                            <span class="principle-number">02</span>
+                            <div>
+                                <h3>Structurer</h3>
+                                <p>Organiser les fonctionnalités, les données et les responsabilités.</p>
+                            </div>
+                        </article>
+
+                        <article class="principle">
+                            <span class="principle-number">03</span>
+                            <div>
+                                <h3>Construire</h3>
+                                <p>Développer, tester et améliorer progressivement la solution.</p>
+                            </div>
+                        </article>
+
                     </div>
                 </div>
-                
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <strong style="display: block; margin-bottom: 5px;">Téléphone</strong>
-                        <span>+225 07 59 32 37 87</span>
+
+            </div>
+
+        </section> -->
+
+
+        <!-- 03 — Compétences -->
+        <section class="expertise-section section-shell" id="skills">
+
+            <div class="section-heading">
+                <p class="section-index">02 — BOÎTE À OUTILS</p>
+                <span class="section-reference">COMPÉTENCES TECHNIQUES</span>
+            </div>
+
+            <div class="section-intro-grid">
+                <h2 class="section-title">
+                    Mes compétences<br>
+                    <span class="serif-accent">techniques.</span>
+                </h2>
+
+                <p class="section-description">
+                    Les technologies que j'utilise pour concevoir,
+                    développer et organiser mes applications.
+                </p>
+            </div>
+
+            <div class="expertise-grid">
+
+                <article class="expertise-card">
+                    <div class="expertise-card-top">
+                        <!-- <span>DISCIPLINE / 01</span> -->
+                        <i class="fa-solid fa-terminal" aria-hidden="true"></i>
                     </div>
-                </div>
-                
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <strong style="display: block; margin-bottom: 5px;">Localisation</strong>
-                        <span>Abidjan, Côte d'Ivoire</span>
+
+                    <h3>Backend & logique métier</h3>
+
+                    <p>
+                        Développement des fonctionnalités, gestion des
+                        requêtes et structuration des traitements côté serveur.
+                    </p>
+
+                    <div class="technology-list">
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                        <!-- <span>Python / Flask</span>
+                        <span>API REST</span> -->
                     </div>
-                </div>
-                
-                <div class="social-links">
-                    <a href="https://x.com/Vitvl_08" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/its_Vitvl/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/emmanueli-vital-56a2b2389/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/EbroVital" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                </div>
-                
-                <a href="Docs/EbroCV.pdf" download class="btn" style="margin-top: 30px; display: inline-block;">
-                    <i class="fas fa-download"></i> Télécharger mon CV
+                </article>
+
+
+                <article class="expertise-card">
+                    <div class="expertise-card-top">
+                        <!-- <span>DISCIPLINE / 02</span> -->
+                        <i class="fa-solid fa-object-group" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Interfaces web</h3>
+
+                    <p>
+                        Création d'interfaces fonctionnelles et responsives
+                        qui facilitent l'utilisation des applications.
+                    </p>
+
+                    <div class="technology-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                        <span>Tailwind CSS</span>
+                        <!-- <span>Vue.js</span> -->
+                    </div>
+                </article>
+
+
+                <article class="expertise-card">
+                    <div class="expertise-card-top">
+                        <!-- <span>DISCIPLINE / 03</span> -->
+                        <i class="fa-solid fa-database" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Architecture des données</h3>
+
+                    <p>
+                        Organisation des données et conception de structures
+                        adaptées aux besoins des applications.
+                    </p>
+
+                    <div class="technology-list">
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>SQLite</span>
+                        <!-- <span>Modélisation</span> -->
+                    </div>
+                </article>
+
+
+                <article class="expertise-card">
+                    <div class="expertise-card-top">
+                        <!-- <span>DISCIPLINE / 04</span> -->
+                        <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Outils & environnement</h3>
+
+                    <p>
+                        Outils de développement et de gestion du code
+                        utilisés au quotidien.
+                    </p>
+
+                    <div class="technology-list">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- <div class="expertise-note">
+                <span class="note-symbol">+</span>
+                <p>
+                    Mon approche : choisir un outil en fonction du problème,
+                    et non l'inverse.
+                </p>
+            </div> -->
+
+        </section>
+
+
+        <!-- 04 — Projets -->
+        <section class="projects-section section-shell" id="projects">
+
+            <div class="section-heading">
+                <p class="section-index">04 — ÉTUDES DE CAS</p>
+                <span class="section-reference">SÉLECTION DE PROJETS</span>
+            </div>
+
+            <div class="section-intro-grid projects-intro">
+                <h2 class="section-title">
+                    Des idées<br>
+                    <span class="serif-accent">aux applications.</span>
+                </h2>
+
+                <p class="section-description">
+                    Chaque projet représente un problème à comprendre,
+                    une solution à construire et une occasion de progresser.
+                </p>
+            </div>
+
+
+            <div class="project-list">
+
+                <!-- Projet 01 -->
+                <article class="project-entry">
+
+                    <div class="project-index">
+                        <span>PROJECT</span>
+                        <strong>01</strong>
+                        <span>WEB / COMMERCE</span>
+                    </div>
+
+                    <div class="project-main">
+                        <div class="project-heading">
+                            <h3>Plateforme E-commerce</h3>
+                            <span class="project-status status-progress">
+                                <span></span> Déploiement en cours
+                            </span>
+                        </div>
+
+                        <p>
+                            Plateforme de vente en ligne intégrant la gestion
+                            des produits, un panier d'achat et un tableau
+                            de bord administrateur.
+                        </p>
+
+                        <div class="project-stack">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+
+                        <a href="https://github.com/EbroVital/Shop"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
+                            Examiner le code <span>↗</span>
+                        </a>
+                    </div>
+
+                    <div class="project-visual visual-commerce" aria-hidden="true">
+                        <img src="image/shop.png" alt="" srcset="">
+                        <!-- <div class="visual-browser">
+                            <div class="browser-bar"><i></i><i></i><i></i></div>
+                            <div class="commerce-layout">
+                                <div class="commerce-sidebar"></div>
+                                <div class="commerce-content">
+                                    <div class="mock-line"></div>
+                                    <div class="mock-products">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="mock-line short"></div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <span class="visual-caption">INTERFACE / CONCEPT</span> -->
+                    </div>
+
+                </article>
+
+
+                <!-- Projet 02 -->
+                <article class="project-entry">
+
+                    <div class="project-index">
+                        <span>PROJECT</span>
+                        <strong>02</strong>
+                        <span>WEB / ÉDUCATION</span>
+                    </div>
+
+                    <div class="project-main">
+                        <div class="project-heading">
+                            <h3>Gestion de classe</h3>
+                            <span class="project-status status-progress">
+                                <span></span> Déploiement en cours
+                            </span>
+                        </div>
+
+                        <p>
+                            Application de gestion d'une classe permettant
+                            aux professeurs de gérer les notes, de générer
+                            des bulletins et de suivre les performances des élèves.
+                        </p>
+
+                        <div class="project-stack">
+                            <span>PHP natif</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+
+                        <a href="https://github.com/EbroVital/GestionClasse"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
+                            Examiner le code <span>↗</span>
+                        </a>
+                    </div>
+
+                    <div class="project-visual visual-school" aria-hidden="true">
+                        <img src="image/note.png" alt="" srcset="">
+                        <!-- <div class="school-sheet">
+                            <div class="sheet-heading"></div>
+                            <div class="sheet-row"><i></i><i></i><i></i></div>
+                            <div class="sheet-row"><i></i><i></i><i></i></div>
+                            <div class="sheet-row"><i></i><i></i><i></i></div>
+                            <div class="sheet-row"><i></i><i></i><i></i></div>
+                        </div>
+                        <span class="visual-caption">DONNÉES / ORGANISATION</span> -->
+                    </div>
+
+                </article>
+
+
+                <!-- Projet 03 -->
+                <article class="project-entry">
+
+                    <div class="project-index">
+                        <span>PROJECT</span>
+                        <strong>03</strong>
+                        <span>BACKEND / API</span>
+                    </div>
+
+                    <div class="project-main">
+                        <div class="project-heading">
+                            <h3>API REST multi-usage</h3>
+                            <span class="project-status status-complete">
+                                <span></span> Terminé
+                            </span>
+                        </div>
+
+                        <p>
+                            API de blog destinée à gérer les utilisateurs,
+                            l'authentification, les publications et les
+                            interactions avec les ressources.
+                        </p>
+
+                        <div class="project-stack">
+                            <span>Laravel</span>
+                            <span>Sanctum</span>
+                            <span>JSON</span>
+                        </div>
+
+                        <a href="https://github.com/EbroVital/blogUserApi"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
+                            Examiner le code <span>↗</span>
+                        </a>
+                    </div>
+
+                    <div class="project-visual visual-api" aria-hidden="true">
+                        <div class="api-code">
+                            <span class="code-muted">01</span>
+                            <span><b>GET</b> /api/users</span>
+                            <span class="code-muted">02</span>
+                            <span><b>POST</b> /api/login</span>
+                            <span class="code-muted">03</span>
+                            <span><b>GET</b> /api/posts</span>
+                            <span class="code-muted">04</span>
+                            <span><b>JSON</b> response</span>
+                        </div>
+                        <span class="visual-caption">ENDPOINTS / APERÇU CONCEPTUEL</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Projet 04 -->
+                <article class="project-entry">
+
+                    <div class="project-index">
+                        <span>PROJECT</span>
+                        <strong>04</strong>
+                        <span>WEB / VITRINE</span>
+                    </div>
+
+                    <div class="project-main">
+                        <div class="project-heading">
+                            <h3>Site vitrine d'agence de voyage</h3>
+                            <span class="project-status status-complete">
+                                <span></span> Terminé
+                            </span>
+                        </div>
+
+                        <p>
+                            Site web présentant les services d'une agence
+                            de voyage à travers une interface responsive
+                            et une structure de contenu dédiée.
+                        </p>
+
+                        <div class="project-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/EbroVital/Site_vitrine-agence-de-voyage-"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="project-link">
+                                Code source <span>↗</span>
+                            </a>
+
+                            <a href="https://travelsiteagency.netlify.app/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="project-link">
+                                Voir le site <span>↗</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-visual visual-travel" aria-hidden="true">
+                        <img src="image/travel.png" alt="" srcset="">
+                        <!-- <div class="travel-composition">
+                            <span class="travel-label">EXPLORE / DISCOVER</span>
+                            <div class="travel-sun"></div>
+                            <div class="travel-horizon"></div>
+                            <div class="travel-mountain mountain-one"></div>
+                            <div class="travel-mountain mountain-two"></div>
+                        </div> -->
+                        <!-- <span class="visual-caption">WEB DESIGN / VOYAGE</span> -->
+                    </div>
+
+                </article>
+
+
+                <!-- Projet 05 -->
+                <article class="project-entry">
+
+                    <div class="project-index">
+                        <span>PROJECT</span>
+                        <strong>05</strong>
+                        <span>WEB / GESTION</span>
+                    </div>
+
+                    <div class="project-main">
+                        <div class="project-heading">
+                            <h3>Système de gestion de stock</h3>
+                            <span class="project-status status-progress">
+                                <span></span> Déploiement en cours
+                            </span>
+                        </div>
+
+                        <p>
+                            Application de gestion des produits et des
+                            mouvements de stock, avec suivi des entrées,
+                            des sorties et des opérations effectuées.
+                        </p>
+
+                        <div class="project-stack">
+                            <span>PHP</span>
+                            <span>Bootstrap</span>
+                            <span>MySQL</span>
+                        </div>
+
+                        <a href="https://github.com/EbroVital/GestionStock"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
+                            Examiner le code <span>↗</span>
+                        </a>
+                    </div>
+
+                    <div class="project-visual visual-stock" aria-hidden="true">
+                        <img src="image/admin.png" alt="" srcset="">
+                        <!-- <div class="stock-grid">
+                            <div class="stock-cell stock-cell-large">
+                                <span>INVENTORY</span>
+                                <strong>↗</strong>
+                                <div class="stock-bars"><i></i><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="stock-cell"><span>ENTRÉES</span><strong>+</strong></div>
+                            <div class="stock-cell"><span>SORTIES</span><strong>−</strong></div>
+                        </div> -->
+                        <!-- <span class="visual-caption">FLUX / INVENTAIRE</span> -->
+                    </div>
+
+                </article>
+
+
+                <!-- Projet 06 -->
+                <article class="project-entry">
+
+                    <div class="project-index">
+                        <span>PROJECT</span>
+                        <strong>06</strong>
+                        <span>WEB / DOCUMENTS</span>
+                    </div>
+
+                    <div class="project-main">
+                        <div class="project-heading">
+                            <h3>Bibliothèque numérique scolaire</h3>
+                            <span class="project-status status-progress">
+                                <span></span> Déploiement en cours
+                            </span>
+                        </div>
+
+                        <p>
+                            Application web développée dans le cadre
+                            de mon mémoire de fin de cycle en Licence 3
+                            de Génie Logiciel.
+                        </p>
+
+                        <div class="project-stack">
+                            <span>Laravel</span>
+                            <span>Bootstrap</span>
+                            <span>MySQL</span>
+                        </div>
+
+                        <a href="https://github.com/EbroVital/GestionBibliotheque_Numerique"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
+                            Examiner le code <span>↗</span>
+                        </a>
+                    </div>
+
+                    <div class="project-visual visual-library" aria-hidden="true">
+                        <img src="image/needy.png" alt="" srcset="">
+                        <!-- <div class="library-books">
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        <div class="library-base"></div>
+                        <span class="visual-caption">DOCUMENTATION / ACCÈS</span> -->
+                    </div>
+
+                </article>
+
+
+                <!-- Projet 07 -->
+                <article class="project-entry">
+
+                    <div class="project-index">
+                        <span>PROJECT</span>
+                        <strong>07</strong>
+                        <span>IA / TRADUCTION</span>
+                    </div>
+
+                    <div class="project-main">
+                        <div class="project-heading">
+                            <h3>Kumajala</h3>
+                            <span class="project-status status-complete">
+                                <span></span> Terminé
+                            </span>
+                        </div>
+
+                        <p>
+                            Application de traduction du français vers des
+                            langues locales africaines, avec restitution
+                            de la traduction sous forme de texte et de voix.
+                        </p>
+
+                        <div class="project-stack">
+                            <span>Python / Flask</span>
+                            <span>Vue.js</span>
+                            <span>HTML / CSS</span>
+                            <span>Firebase</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/EbroVital/kumajala"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="project-link">
+                                Code source <span>↗</span>
+                            </a>
+
+                            <a href="https://kumajala-ten.vercel.app/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="project-link">
+                                Voir l'application <span>↗</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-visual visual-language" aria-hidden="true">
+                        <img src="image/kumajala.png" alt="" srcset="">
+                        <!-- <div class="language-card">
+                            <span>FR</span>
+                            <div class="language-arrow">→</div>
+                            <span>AF</span>
+                        </div>
+                        <div class="language-wave">
+                            <i></i><i></i><i></i><i></i><i></i>
+                            <i></i><i></i><i></i><i></i><i></i>
+                            <i></i><i></i><i></i>
+                        </div> -->
+                        <!-- <span class="visual-caption">LANGUE / TRANSMISSION</span> -->
+                    </div>
+
+                </article>
+
+
+                <!-- Projet 08 -->
+                <article class="project-entry">
+
+                    <div class="project-index">
+                        <span>PROJECT</span>
+                        <strong>08</strong>
+                        <span>WEB / AUTOMATISATION</span>
+                    </div>
+
+                    <div class="project-main">
+                        <div class="project-heading">
+                            <h3>Gestion des avis et délibérations</h3>
+                            <span class="project-status status-complete">
+                                <span></span> Terminé
+                            </span>
+                        </div>
+
+                        <p>
+                            Application web réalisée au cours de mon stage
+                            pour la validation du BTS en Informatique
+                            Développeur d'Application.
+                        </p>
+
+                        <div class="project-stack">
+                            <span>PHP / Laravel</span>
+                            <span>Bootstrap</span>
+                            <span>MySQL</span>
+                            <span>DOMPDF</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/EbroVital/stage_app"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="project-link">
+                                Code source <span>↗</span>
+                            </a>
+
+                            <a href="https://stageapp-production.up.railway.app/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="project-link">
+                                Voir l'application <span>↗</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-visual visual-documents" aria-hidden="true">
+                        <img src="image/TB.png" alt="" srcset="">
+                        <!-- <div class="document-sheet">
+                            <div class="document-stamp">VALIDATION</div>
+                            <div class="document-line wide"></div>
+                            <div class="document-line"></div>
+                            <div class="document-line medium"></div>
+                            <div class="document-separator"></div>
+                            <div class="document-line"></div>
+                            <div class="document-line medium"></div>
+                        </div> -->
+                        <!-- <span class="visual-caption">DOCUMENTS / GESTION</span> -->
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="projects-footer">
+                <p>
+                    Chaque dépôt constitue une trace du processus de conception
+                    et de développement.
+                </p>
+
+                <a href="https://github.com/EbroVital"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="button-secondary">
+                    Parcourir tous mes dépôts <span>↗</span>
                 </a>
             </div>
-            
-            <!-- <div class="contact-form">
-                <div id="form-status" class="form-status"></div>
-                <form id="contact-form">
-                    <input type="text" name="name" placeholder="Votre nom *" required>
-                    <input type="email" name="email" placeholder="Votre email *" required>
-                    <input type="text" name="subject" placeholder="Sujet">
-                    <textarea name="message" placeholder="Votre message *" required></textarea>
-                    <button type="submit" class="btn">
-                        <i class="fas fa-paper-plane"></i> Envoyer le message
-                    </button>
-                </form>
-            </div> -->
+
+        </section>
+
+
+        <!-- 05 — Parcours -->
+        <section class="journey-section section-shell" id="journey">
+
+            <div class="section-heading">
+                <p class="section-index">05 — TRAJECTOIRE</p>
+                <span class="section-reference">FORMATION & EXPÉRIENCE</span>
+            </div>
+
+            <div class="section-intro-grid">
+                <h2 class="section-title">
+                    Construire<br>
+                    <span class="serif-accent">les fondations.</span>
+                </h2>
+
+                <p class="section-description">
+                    Une progression construite autour de la formation,
+                    de la pratique et de la réalisation de projets.
+                </p>
+            </div>
+
+            <div class="journey-timeline">
+
+                <article class="journey-entry">
+                    <div class="journey-date">
+                        <span>2024 — 2025</span>
+                        <span>FORMATION</span>
+                    </div>
+
+                    <div class="journey-marker"></div>
+
+                    <div class="journey-content">
+                        <p class="journey-organization">Gecos Formation</p>
+                        <h3>Licence en Génie Logiciel</h3>
+                        <p>
+                            Obtention de la licence avec mention.
+                        </p>
+                    </div>
+                </article>
+
+
+                <article class="journey-entry">
+                    <div class="journey-date">
+                        <span>2023 — 2024</span>
+                        <span>EXPÉRIENCE</span>
+                    </div>
+
+                    <div class="journey-marker"></div>
+
+                    <div class="journey-content">
+                        <p class="journey-organization">
+                            Conseil Régional de l'Indénié-Djuablin
+                        </p>
+                        <h3>Stage de validation du BTS</h3>
+                        <p>
+                            Réalisation de projets dans un contexte professionnel.
+                        </p>
+                    </div>
+                </article>
+
+
+                <article class="journey-entry">
+                    <div class="journey-date">
+                        <span>2023</span>
+                        <span>FORMATION</span>
+                    </div>
+
+                    <div class="journey-marker"></div>
+
+                    <div class="journey-content">
+                        <p class="journey-organization">
+                            ESETEC — École Supérieure de l'Enseignement
+                            Technique et Commercial
+                        </p>
+                        <h3>
+                            BTS en Informatique Développeur d'Application
+                        </h3>
+                        <p>
+                            Formation en développement informatique,
+                            programmation et gestion de bases de données.
+                        </p>
+                    </div>
+                </article>
+
+
+                <article class="journey-entry">
+                    <div class="journey-date">
+                        <span>2022</span>
+                        <span>ORIGINES</span>
+                    </div>
+
+                    <div class="journey-marker"></div>
+
+                    <div class="journey-content">
+                        <p class="journey-organization">Premiers pas</p>
+                        <h3>Découverte du développement web</h3>
+                        <p>
+                            Début de mon apprentissage et réalisation
+                            de mes premiers projets web.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="journey-footer">
+                <span>APPRENDRE</span>
+                <span class="journey-footer-symbol">→</span>
+                <span>CONSTRUIRE</span>
+                <span class="journey-footer-symbol">→</span>
+                <span>PROGRESSER</span>
+            </div>
+
+        </section>
+
+
+        <!-- 06 — Contact -->
+        <section class="contact-section section-shell" id="contact">
+
+            <div class="section-heading">
+                <p class="section-index">06 — PROCHAINE ÉTAPE</p>
+                <span class="section-reference">OUVERT AUX ÉCHANGES</span>
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="contact-main">
+                    <p class="eyebrow">UNE IDÉE À CONSTRUIRE ?</p>
+
+                    <h2>
+                        Parlons<br>
+                        de votre<br>
+                        <span class="serif-accent">prochain projet.</span>
+                    </h2>
+
+                    <p class="contact-description">
+                        Vous avez un projet, une idée ou une opportunité
+                        de collaboration ? Contactez-moi pour en discuter.
+                    </p>
+
+                    <a href="mailto:ebrovital02@gmail.com"
+                       class="button-primary">
+                        Entrer en contact <span>↗</span>
+                    </a>
+                </div>
+
+
+                <div class="contact-details">
+
+                    <div class="contact-detail">
+                        <span class="detail-label">EMAIL</span>
+                        <a href="mailto:ebrovital02@gmail.com">
+                            ebrovital02@gmail.com <span>↗</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-detail">
+                        <span class="detail-label">TÉLÉPHONE</span>
+                        <a href="tel:+2250759323787">
+                            +225 07 59 32 37 87
+                        </a>
+                    </div>
+
+                    <div class="contact-detail">
+                        <span class="detail-label">LOCALISATION</span>
+                        <p>Abidjan, Côte d'Ivoire</p>
+                    </div>
+
+                    <div class="contact-detail">
+                        <span class="detail-label">RÉSEAUX & CODE</span>
+
+                        <div class="contact-socials">
+                            <a href="https://github.com/EbroVital"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                GitHub <span>↗</span>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/emmanueli-vital-56a2b2389/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                LinkedIn <span>↗</span>
+                            </a>
+
+                            <!-- <a href="https://x.com/Vitvl_08"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                X <span>↗</span>
+                            </a> -->
+
+                            <a href="https://www.instagram.com/its_Vitvl/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Instagram <span>↗</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-cv">
+                        <span>DOCUMENT / CV</span>
+                        <a href="Docs/EbroCV.pdf" download>
+                            Télécharger mon curriculum vitæ <span>↓</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Pied de page -->
+    <footer class="site-footer">
+
+        <!-- <a href="#top" class="footer-brand">
+            EV<span>/</span>
+        </a>
+
+        <p>
+            Conçu avec intention. Développé avec méthode.
+        </p> -->
+
+        <div class="footer-meta">
+            <span>© <span id="current-year">2026</span> EBROTTIE VITAL</span>
+            <a href="#home">RETOUR EN HAUT ↑</a>
         </div>
-    </section>
 
-
-    <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
-        <!-- Background -->
-        <!-- <rect width="800" height="400" fill="#0a0e27"/> -->
-  
-        <!-- Version 1: <EV /> - Top Left -->
-        <!-- <g transform="translate(100, 80)">
-            <text x="0" y="0" font-family="'Fira Code', monospace" font-size="48" font-weight="bold" fill="#E6182A">&lt;</text>
-            <text x="30" y="0" font-family="'Fira Code', monospace" font-size="48" font-weight="bold" fill="#ffffff">EV</text>
-            <text x="120" y="0" font-family="'Fira Code', monospace" font-size="48" font-weight="bold" fill="#E6182A">/&gt;</text>
-            <text x="0" y="35" font-family="'Poppins', sans-serif" font-size="14" fill="#e0e0e0">Full-Stack Developer</text>
-        </g> -->
-  
-        <!-- Version 2: {E} - Top Right -->
-        <!-- <g transform="translate(480, 80)">
-            <text x="0" y="0" font-family="'Fira Code', monospace" font-size="56" font-weight="bold" fill="#00d4ff">{</text>
-            <text x="35" y="0" font-family="'Fira Code', monospace" font-size="56" font-weight="bold" fill="#ffffff">E</text>
-            <text x="85" y="0" font-family="'Fira Code', monospace" font-size="56" font-weight="bold" fill="#00d4ff">}</text>
-            <text x="0" y="35" font-family="'Poppins', sans-serif" font-size="14" fill="#e0e0e0">Ebrottié</text>
-        </g> -->
-  
-        <!-- Version 3: Terminal style - Bottom Left -->
-        <!-- <g transform="translate(60, 240)">
-            <rect x="0" y="-45" width="320" height="80" rx="8" fill="#1a1f3a" stroke="#E6182A" stroke-width="2"/>
-            <text x="15" y="-10" font-family="'Fira Code', monospace" font-size="20" fill="#00d4ff">ebro@dev</text>
-            <text x="140" y="-10" font-family="'Fira Code', monospace" font-size="20" fill="#ffffff">:</text>
-            <text x="155" y="-10" font-family="'Fira Code', monospace" font-size="20" fill="#9b59b6">~</text>
-            <text x="175" y="-10" font-family="'Fira Code', monospace" font-size="20" fill="#ffffff">$</text>
-            <rect x="195" y="-23" width="12" height="20" fill="#E6182A" opacity="0.8">
-            <animate attributeName="opacity" values="0.8;0;0.8" dur="1s" repeatCount="indefinite"/>
-            </rect>
-        </g> -->
-  
-        <!-- Version 4: Minimal <EV/> - Bottom Right -->
-        <!-- <g transform="translate(480, 260)">
-            <circle cx="95" cy="-15" r="60" fill="#1a1f3a" stroke="#E6182A" stroke-width="3"/>
-            <text x="45" y="0" font-family="'Fira Code', monospace" font-size="32" font-weight="bold" fill="#ffffff">&lt;EV/&gt;</text>
-        </g> -->
-    </svg>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Nango Ebrottié Vital E. </p>
-        <p style="margin-top: 10px; font-size: 14px; opacity: 0.7;">Tous droits réservés</p>
     </footer>
-
-    
 
 </body>
 </html>
