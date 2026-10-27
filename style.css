@@ -15,8 +15,9 @@
     --ink-muted: #77786D;
 
     --olive: #858B68;
+    --olive1: #4bff04;
     --olive-light: #DCE0CE;
-    --terracotta: #B66A45;
+    --terracotta: #fe5500;
     --terracotta-light: #EAD6C8;
 
     --line: #D3D0C5;
@@ -907,7 +908,7 @@ section {
     align-items: center;
     gap: 6px;
     font-size: 8px;
-    font-weight: bold;
+    /* font-weight: bold; */
     letter-spacing: 0.015em;
     white-space: nowrap;
 }
@@ -923,7 +924,7 @@ section {
 }
 
 .status-complete > span {
-    background: var(--olive);
+    background: var(--olive1);
 }
 
 .project-main > p {
