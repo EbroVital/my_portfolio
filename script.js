@@ -13,6 +13,16 @@ const currentYear = document.querySelector("#current-year");
 
 const mobileBreakpoint = window.matchMedia("(max-width: 850px)");
 
+const intro = document.querySelector("p.hero-intro")
+const hour = new Date().getUTCHours();
+// console.log(intro)
+
+if(hour < 18){
+    intro.textContent = "Bonjour, je suis"
+} else {
+    intro.textContent = "Bonsoir, je suis"
+}
+
 /* =========================================================
    02 — ANNÉE AUTOMATIQUE DU FOOTER
    ========================================================= */
