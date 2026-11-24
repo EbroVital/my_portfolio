@@ -14,14 +14,17 @@ const currentYear = document.querySelector("#current-year");
 const mobileBreakpoint = window.matchMedia("(max-width: 850px)");
 
 // Salutations
-const intro = document.querySelector("p.hero-intro")
+const intro = document.querySelector("p.hero-intro");
 const hour = new Date().getUTCHours();
 
+if (intro) {
+    const isEnglish = document.documentElement.lang === "en";
 
-if(hour < 18){
-    intro.textContent = "Bonjour, je suis"
-} else {
-    intro.textContent = "Bonsoir, je suis"
+    if (hour < 18) {
+        intro.textContent = isEnglish ? "Good morning, I'm" : "Bonjour, je suis";
+    } else {
+        intro.textContent = isEnglish ? "Good evening, I'm" : "Bonsoir, je suis";
+    }
 }
 
 /* =========================================================
